@@ -2521,6 +2521,15 @@ const (
 	OptPayoutType_BINARY  OptPayoutType = "3"
 )
 
+// OrdCategory field enumeration values.
+type OrdCategory string
+
+const (
+	OrdCategory_SPOT   OrdCategory = "1"
+	OrdCategory_SWAP   OrdCategory = "2"
+	OrdCategory_MARGIN OrdCategory = "3"
+)
+
 // OrdRejReason field enumeration values.
 type OrdRejReason string
 
@@ -2572,6 +2581,8 @@ type OrdType string
 
 const (
 	OrdType_MARKET                         OrdType = "1"
+	OrdType_PAYMENT                        OrdType = "11"
+	OrdType_OBTAINED                       OrdType = "12"
 	OrdType_LIMIT                          OrdType = "2"
 	OrdType_STOP                           OrdType = "3"
 	OrdType_STOP_LIMIT                     OrdType = "4"
