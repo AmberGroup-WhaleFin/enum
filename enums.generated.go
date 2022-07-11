@@ -917,11 +917,12 @@ const (
 	CxlRejReason_BROKER                                                    CxlRejReason = "2"
 	CxlRejReason_ORDER_ALREADY_IN_PENDING_CANCEL_OR_PENDING_REPLACE_STATUS CxlRejReason = "3"
 	CxlRejReason_UNABLE_TO_PROCESS_ORDER_MASS_CANCEL_REQUEST               CxlRejReason = "4"
-	CxlRejReason_ORIGORDMODTIME                                            CxlRejReason = "5"
-	CxlRejReason_DUPLICATE_CLORDID                                         CxlRejReason = "6"
-	CxlRejReason_PRICE_EXCEEDS_CURRENT_PRICE                               CxlRejReason = "7"
-	CxlRejReason_PRICE_EXCEEDS_CURRENT_PRICE_BAND                          CxlRejReason = "8"
-	CxlRejReason_OTHER                                                     CxlRejReason = "99"
+	// CxlRejReason_ORIGORDMODTIME                                            CxlRejReason = "5"
+	CxlRejReason_INVALID_ORDER                    CxlRejReason = "5"
+	CxlRejReason_DUPLICATE_CLORDID                CxlRejReason = "6"
+	CxlRejReason_PRICE_EXCEEDS_CURRENT_PRICE      CxlRejReason = "7"
+	CxlRejReason_PRICE_EXCEEDS_CURRENT_PRICE_BAND CxlRejReason = "8"
+	CxlRejReason_OTHER                            CxlRejReason = "99"
 )
 
 // CxlRejResponseTo field enumeration values.
